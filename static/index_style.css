@@ -1,22 +1,45 @@
+body{
+    margin: 0;
+}
+
 #topBar{
     position: absolute;
-    top: 5%;
+    top: 40px;
     left: 0;
     width: 100%;
-    height: 17%;
+    height: 150px;
     overflow-y: hidden;
     overflow-x: auto;
-    background-color: rgb(23, 128, 128);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: rgb(145, 139, 122);
+    z-index: 5;
 }
 #imageContainer{
     height: 100%;
-    width: 50%;
-    position: relative;
-    left: 25%;
-    overflow: hidden;
+    width: 44%;
+    position: absolute;
+    left: 28%;
+    display: flex;
+    justify-content: space-between;
 }
 #imageContainer img{
     height: 100%;
+    margin-right: 5px;
+}
+
+#sideBar{
+    position: absolute;
+    z-index: 4;
+    left: 13%;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(88, 177, 61);
+}
+
+#sideBar img{
+    position: absolute;
+    top: 200px;
+    width: 80%;
+    left: 10%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
 }
