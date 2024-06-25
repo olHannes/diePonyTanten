@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: 'Playwrite DE Grund', sans-serif;
 }
 
 #topBar{
@@ -33,6 +34,8 @@ body{
     height: 100%;
     width: 15%;
     background-color: rgb(88, 177, 61);
+    -webkit-box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79); 
+box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79);
 }
 
 #sideBar img{
@@ -42,4 +45,21 @@ body{
     left: 10%;
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
+}
+#sideBar h1{
+    position: absolute;
+    top: 50%;
+}
+
+
+.page{
+    background-color: #fffbe2;
+    position: absolute;
+    top: 200px;
+    left: 31%;
+
+    width: 65%;
+    height: 75%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
