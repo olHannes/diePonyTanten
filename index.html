@@ -27,19 +27,37 @@
 
 
     <div id="sideBar">
-        <img src="static/images/logo.jpg" alt="image logo">
+        <img src="static/images/logo.jpg" alt="image logo" onclick="openPage('startPage')">
         <div id="pageButtons">
-            <h2>➜ Startseite</h2>
-            <h2>➜ About Us</h2>
-            <h2>➜ Ponyspaß</h2>
-            <h2>➜ Kontakt</h2>    
+            <h2 onclick="openPage('startPage')">➜ Startseite</h2>
+            <h2 onclick="openPage('aboutUs')">➜ About Us</h2>
+            <h2 onclick="openPage('ponySpaß')">➜ Ponyspaß</h2>
+            <h2 onclick="openPage('contact')">➜ Kontakt</h2>    
         </div>
 
     </div>
 
-    <div id="startPage" class="page"></div>
-    <div id="aboutUs" class="page"></div>
-    <div id="ponySpaß" class="page"></div>
-    <div id="contact" class="page"></div>
+    <div id="pages">
+        <div id="startPage" class="page">
+            <h3>Startseite</h3>
+
+        </div>
+
+        <div id="aboutUs" class="page">
+            <h3>About Us</h3>
+
+        </div>
+    
+        <div id="ponySpaß" class="page">
+            <h3>Ponyspaß</h3>
+
+        </div>
+    
+        <div id="contact" class="page">
+            <h3>Kontakt</h3>
+
+            <img src="static/images/instagramImage.png" alt="instagram Icon"onclick="linkToInstagram()">
+            <h4 onclick="linkToInstagram()">@dieponytanten</h4>
+        </div>
 </body>
 </html>

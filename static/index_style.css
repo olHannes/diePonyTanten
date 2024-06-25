@@ -42,7 +42,7 @@ body{
     left: 13%;
     height: 100%;
     width: 15%;
-    background-color: rgb(88, 177, 61);
+    background-color: rgb(71, 139, 50);
     -webkit-box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79); 
     box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79);
 }
@@ -82,7 +82,6 @@ body{
 
 .page{
     display: none;
-    background-color: #fffbe2;
     position: absolute;
     top: 25%;
     left: 31%;
@@ -91,4 +90,39 @@ body{
     height: 75%;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+#pages h3{
+    color: black;
+    position: absolute;
+    left: 4%;
+}
+
+#startPage{
+    display: block;
+    background-color: #fffbe2;
+}
+#aboutUs{
+    background-color: #e2ffed;
+}
+#ponySpaß{
+    background-color: #e2ebff;
+}
+#contact{
+    background-color: #ffe2e4;
+}
+#contact img{
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    height: 15%;
+}
+#contact h4{
+    position: absolute;
+    left: 3%;
+    top: 64%;
+    font-size: 90%;
+}
+#contact h4:hover, img:hover{
+    opacity: 70%;
 }
