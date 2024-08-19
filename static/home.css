@@ -1,13 +1,17 @@
-body{
+body {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(251, 247, 241);
 }
-
 .sideBar {
     position: absolute;
     z-index: 4;
     left: 0;
-    height: 100%;
-    width: 15%;
+    height: 100vh;
+    width: 7%;
     background-color: rgb(71, 139, 50);
     -webkit-box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79); 
     box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79);
@@ -31,7 +35,10 @@ body{
     top: 0;
     right: 0;
     background-color: #333;
-    padding: 10px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 7px;
     z-index: 1000;
     border-radius: 0 0 0 9px;
 }
@@ -67,15 +74,44 @@ body{
 }
 
 
-#logo{
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    left: 0;
-    top: 10%;
+#logo {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
 }
-#logo img{
-    height: 50%;
+
+#logo img {
+    height: auto;
+    max-height: 50%;
+    max-width: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#welcomeTxt {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#welcomeTxt h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#welcomeTxt p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.panel{
+    transition: ease-in 1s;
 }

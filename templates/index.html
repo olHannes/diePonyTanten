@@ -23,21 +23,38 @@
     </div>
 
 
-    <div id="logo">
-        <img src="static/images/logo.jpg" alt="logo_Image.jpg">
+
+    <div id="home" class="panel">
+        <div style="flex-direction: column;">
+            <div id="logo">
+                <img src="static/images/logo.jpg" alt="logo_Image.jpg">
+            </div>
+            
+            <div id="welcomeTxt">
+                <h1>Herzlich Wilkommen auf der Homepage der Ponytanten</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt vero, sint accusantium sed perspiciatis ducimus et ipsum repudiandae vel accusamus, debitis odit autem cupiditate nihil maiores nulla dolore iste?
+                </p>
+            </div>
+        </div>
     </div>
-    
+
+    <div id="about" class="panel" style="display:none;">
+        <h1>About Us</h1>
+        <p>Informationen über die Ponytanten.</p>
+    </div>
+
+    <div id="gallery" class="panel" style="display:none;">
+        <h1>Galerie</h1>
+        <p>Bildergalerie der Ponytanten.</p>
+    </div>
 </body>
 
 
 <script>
 function toggleMenu() {
     const dropdownMenu = document.getElementById("dropdownMenu");
-    if (dropdownMenu.style.display === "block") {
-        dropdownMenu.style.display = "none";
-    } else {
-        dropdownMenu.style.display = "block";
-    }
+    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
 }
 
 window.onclick = function(event) {
@@ -49,10 +66,20 @@ window.onclick = function(event) {
     }
 }
 
+
+
 function setSidebarColor(section) {
     const sidebar = document.querySelector('.sideBar');
     sidebar.classList.remove('home', 'about', 'gallery');
     sidebar.classList.add(section);
+    setPanel(section);
+}
+
+function setPanel(section){
+    document.getElementById('home').style.opacity="0%";
+    document.getElementById('about').style.opacity="0%";
+    document.getElementById('gallery').style.opacity="0%";
+    document.getElementById(section).style.opacity="100%";
 }
 
 
