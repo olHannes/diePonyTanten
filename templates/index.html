@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="static/home.css">
 </head>
 <body>
-    <section class="sideBar"></section>
+    <section class="sideBar" id="sidebar"></section>
 
 
 
@@ -26,12 +26,12 @@
 
     <div id="home" class="panel">
         <div style="flex-direction: column;">
-            <div id="logo">
+            <div class="logo">
                 <img src="static/images/logo.jpg" alt="logo_Image.jpg">
             </div>
             
-            <div id="welcomeTxt">
-                <h1>Herzlich Wilkommen auf der Homepage der Ponytanten</h1>
+            <div class="welcomeTxt">
+                <h1>Herzlich Wilkommen auf der Homepage der Ponytanten.</h1>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt vero, sint accusantium sed perspiciatis ducimus et ipsum repudiandae vel accusamus, debitis odit autem cupiditate nihil maiores nulla dolore iste?
                 </p>
@@ -40,14 +40,71 @@
     </div>
 
     <div id="about" class="panel" style="display:none;">
-        <h1>About Us</h1>
-        <p>Informationen über die Ponytanten.</p>
+        <div style="flex-direction: column;">
+            <div class="logo">
+                <img src="static/images/logo.jpg" alt="logo_Image.jpg">
+            </div>
+            
+            <div class="welcomeTxt">
+                <h1>Wer sind wir?</h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt vero, sint accusantium sed perspiciatis ducimus et ipsum repudiandae vel accusamus, debitis odit autem cupiditate nihil maiores nulla dolore iste?
+                </p>
+            </div>
+        </div>
     </div>
 
     <div id="gallery" class="panel" style="display:none;">
-        <h1>Galerie</h1>
-        <p>Bildergalerie der Ponytanten.</p>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="logo">
+                <img src="static/images/logo.jpg" alt="logo_Image.jpg">
+            </div>
+            
+            <div class="welcomeTxt">
+                <h1>Galerie</h1>
+            </div>
+            
+            <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 7px; justify-content: center; margin-left: 5px;">
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img1.jpg" alt="Bild 1" style="width: 140px; height: auto;">
+                    <p>Bild 1 Beschreibung</p>
+                </div>
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img2.jpg" alt="Bild 2" style="width: 140px; height: auto;">
+                    <p>Bild 2 Beschreibung</p>
+                </div>
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img3.jpg" alt="Bild 3" style="width: 140px; height: auto;">
+                    <p>Bild 3 Beschreibung</p>
+                </div>
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img4.jpg" alt="Bild 4" style="width: 140px; height: auto;">
+                    <p>Bild 4 Beschreibung</p>
+                </div>
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img5.jpg" alt="Bild 5" style="width: 140px; height: auto;">
+                    <p>Bild 5 Beschreibung</p>
+                </div>
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img6.jpg" alt="Bild 6" style="width: 140px; height: auto;">
+                    <p>Bild 6 Beschreibung</p>
+                </div>
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img7.jpg" alt="Bild 7" style="width: 140px; height: auto;">
+                    <p>Bild 7 Beschreibung</p>
+                </div>
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img8.jpg" alt="Bild 8" style="width: 140px; height: auto;">
+                    <p>Bild 8 Beschreibung</p>
+                </div>
+                <div class="image-item" style="text-align: center;">
+                    <img src="static/images/img9.jpg" alt="Bild 9" style="width: 140px; height: auto;">
+                    <p>Bild 9 Beschreibung</p>
+                </div>
+            </div>
+        </div>
     </div>
+    
 </body>
 
 
@@ -76,10 +133,16 @@ function setSidebarColor(section) {
 }
 
 function setPanel(section){
-    document.getElementById('home').style.opacity="0%";
-    document.getElementById('about').style.opacity="0%";
-    document.getElementById('gallery').style.opacity="0%";
-    document.getElementById(section).style.opacity="100%";
+    document.getElementById('home').style.display="none";
+    document.getElementById('about').style.display="none";
+    document.getElementById('gallery').style.display="none";
+    if(section=="gallery"){
+        document.getElementById('sidebar').style.width="5%";
+    }
+    else{
+        document.getElementById('sidebar').style.width="7%";
+    }
+    document.getElementById(section).style.display="block";
 }
 
 

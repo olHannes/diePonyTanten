@@ -74,7 +74,7 @@ body {
 }
 
 
-#logo {
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +83,7 @@ body {
     padding-top: 20px;
 }
 
-#logo img {
+.logo img {
     height: auto;
     max-height: 50%;
     max-width: 80%;
@@ -93,7 +93,7 @@ body {
     border-radius: 10px;
 }
 
-#welcomeTxt {
+.welcomeTxt {
     margin-top: 20px;
     padding: 20px;
     text-align: center;
@@ -102,16 +102,27 @@ body {
     margin-right: auto;
 }
 
-#welcomeTxt h1 {
+.welcomeTxt h1 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-#welcomeTxt p {
+.welcomeTxt p {
     font-size: 1.2em;
     line-height: 1.6em;
 }
 
 .panel{
     transition: ease-in 1s;
+}
+
+
+
+
+
+
+
+.image-gallery img{
+    border-radius: 7px;
+    max-height: 70%;
 }
