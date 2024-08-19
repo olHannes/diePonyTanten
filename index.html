@@ -3,61 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>diePonyTanten</title>
-    <link rel="stylesheet" href="static/index_style.css">
-    <script src="static/index_script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
-
+    <title>Home</title>
+    <link rel="stylesheet" href="static/home.css">
 </head>
 <body>
+    <section class="sideBar"></section>
 
-    <div id="topBar">
-        <div id="welcome">
-            <h1>Wilkommen!</h1>
+
+
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
         </div>
-        <div id="imageContainer">
-            <img src="static/images/img_1.jpg" alt="image 01">
-            <img src="static/images/img_2.jpg" alt="image 02">
-            <img src="static/images/img_3.jpg" alt="image 03">
-            <img src="static/images/img_4.jpg" alt="image 04">
+        <div class="dropdown-content" id="dropdownMenu">
+            <a href="#home" class="nav-item" onclick="setSidebarColor('home')">Home</a>
+            <a href="#about" class="nav-item"onclick="setSidebarColor('about')">About Us</a>
+            <a href="#gallery" class="nav-item"onclick="setSidebarColor('gallery')">Galerie</a>
         </div>
     </div>
 
 
-    <div id="sideBar">
-        <img src="static/images/logo.jpg" alt="image logo" onclick="openPage('startPage')">
-        <div id="pageButtons">
-            <h2 onclick="openPage('startPage')">➜ Startseite</h2>
-            <h2 onclick="openPage('aboutUs')">➜ About Us</h2>
-            <h2 onclick="openPage('ponySpaß')">➜ Ponyspaß</h2>
-            <h2 onclick="openPage('contact')">➜ Kontakt</h2>    
-        </div>
-
+    <div id="logo">
+        <img src="static/images/logo.jpg" alt="logo_Image.jpg">
     </div>
-
-    <div id="pages">
-        <div id="startPage" class="page">
-            <h3>Startseite</h3>
-
-        </div>
-
-        <div id="aboutUs" class="page">
-            <h3>About Us</h3>
-
-        </div>
     
-        <div id="ponySpaß" class="page">
-            <h3>Ponyspaß</h3>
-
-        </div>
-    
-        <div id="contact" class="page">
-            <h3>Kontakt</h3>
-
-            <img src="static/images/instagramImage.png" alt="instagram Icon"onclick="linkToInstagram()">
-            <h4 onclick="linkToInstagram()">@dieponytanten</h4>
-        </div>
 </body>
+
+
+<script>
+function toggleMenu() {
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    if (dropdownMenu.style.display === "block") {
+        dropdownMenu.style.display = "none";
+    } else {
+        dropdownMenu.style.display = "block";
+    }
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.menu-icon')) {
+        const dropdownMenu = document.getElementById("dropdownMenu");
+        if (dropdownMenu.style.display === "block") {
+            dropdownMenu.style.display = "none";
+        }
+    }
+}
+
+function setSidebarColor(section) {
+    const sidebar = document.querySelector('.sideBar');
+    sidebar.classList.remove('home', 'about', 'gallery');
+    sidebar.classList.add(section);
+}
+
+
+</script>
 </html>
