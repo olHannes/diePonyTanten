@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +8,7 @@ body {
     background-color: rgb(251, 247, 241);
 }
 .sideBar {
-    position: absolute;
+    position: fixed;
     z-index: 4;
     left: 0;
     height: 100vh;
@@ -125,4 +126,18 @@ body {
 .image-gallery img{
     border-radius: 7px;
     max-height: 70%;
+}
+.image-gallery p{
+    font-size: 90%;
+}
+
+.location{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.location iframe{
+    width: 77%;
+    height: auto;
+    margin-left: 10%;
 }
