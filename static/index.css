@@ -17,7 +17,7 @@ body {
     background-color: rgb(71, 139, 50);
     -webkit-box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79); 
     box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79);
-    transition: background-color 1s ease;
+    transition: all 1s ease;
 }
 
 .sideBar.home {
@@ -110,6 +110,7 @@ body {
     transition: ease-in 1s;
 }
 
+/*Style for embedded google maps*/
 
 .location{
     width: 85%;
@@ -125,7 +126,7 @@ body {
 }
 
 
-
+/*Style for image lines*/
 
 .imgContainer{
     width: 90%;
@@ -138,6 +139,7 @@ body {
 }
 
 
+/*Style for image Viewer*/
 
 .modal {
     display: none; 
@@ -191,7 +193,7 @@ body {
     cursor: pointer;
 }
 
-
+/*style for person introduction*/
 
 .introduction{
     width: 80%;
@@ -207,6 +209,8 @@ body {
 }
 
 
+/*Style for instagram link*/
+
 #instaLink{
     width: 80%; 
     position: relative; 
@@ -216,3 +220,76 @@ body {
     max-height: 25vh;
     width: auto;
 }
+
+
+
+
+
+
+/*Style for loading animation*/
+
+.loader {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+  }
+  
+  .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #000000;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #000000;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #000000;
+  }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }

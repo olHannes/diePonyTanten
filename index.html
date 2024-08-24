@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="static/index.css">
 </head>
 <body>
+    <div id="loader" class="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+      </div>
+      
     <section class="sideBar" id="sidebar"></section>
 
 
@@ -281,6 +287,39 @@ document.getElementById("instaLink").onclick = function() {
         window.location.href = "https://www.instagram.com/dieponytanten/";
     }
 };
+
+
+
+
+
+
+
+
+
+function showLoader() {
+    var loader = document.getElementById("loader");
+    loader.style.display = "block";
+
+    setTimeout(function() {
+        loader.style.display = "none";
+        document.getElementById("gallery").style.display = "block";
+    }, 1500);
+}
+
+function setPanel(section) {
+    document.getElementById('home').style.display = "none";
+    document.getElementById('about').style.display = "none";
+    document.getElementById('gallery').style.display = "none";
+    document.getElementById('contact').style.display = "none";
+
+    if(section == "gallery"){
+        document.getElementById('sidebar').style.width = "3%";
+        showLoader();
+    } else {
+        document.getElementById(section).style.display = "block";
+        document.getElementById('sidebar').style.width = "5%";
+    }
+}
 
 
 </script>
