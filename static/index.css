@@ -4,14 +4,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(251, 247, 241);
 }
 .sideBar {
     position: fixed;
     z-index: 4;
     left: 0;
-    height: 100vh;
+    top: 0;
+    height: 100%;
     width: 7%;
     background-color: rgb(71, 139, 50);
     -webkit-box-shadow: 10px 0px 6px 1px rgba(19,49,4,0.79); 
@@ -118,26 +119,28 @@ body {
 }
 
 
-
-
-
-
-
-.image-gallery img{
-    border-radius: 7px;
-    max-height: 70%;
-}
-.image-gallery p{
-    font-size: 90%;
-}
-
 .location{
-    width: 100%;
+    width: 85%;
+    height: 15%;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 13%;
 }
 .location iframe{
-    width: 77%;
-    height: auto;
-    margin-left: 10%;
+    width: 100%;
+    height: 30vh;
+}
+
+
+
+
+.imgContainer{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-bottom: 20px;
+}
+.imgContainer img{
+    width: 45%;
 }
