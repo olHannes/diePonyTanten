@@ -196,5 +196,16 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
+}
+
+
+#instaLink{
+    width: 80%; 
+    position: relative; 
+    left: 13%;
+}
+#instaLink img{
+    max-height: 25vh;
+    width: auto;
 }
