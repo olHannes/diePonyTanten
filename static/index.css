@@ -229,6 +229,7 @@ body {
 /*Style for loading animation*/
 
 .loader {
+    display: none;
     position: absolute;
     top: calc(50% - 32px);
     left: calc(50% - 32px);
