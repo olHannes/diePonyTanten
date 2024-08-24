@@ -153,6 +153,10 @@ body {
     background-color: rgba(0,0,0,0.9); 
 }
 
+.background-layer {
+    z-index: -1 !important;
+}
+
 .modal-content {
     margin: auto;
     display: block;

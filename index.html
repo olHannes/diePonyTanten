@@ -259,12 +259,18 @@ for (var i = 0; i < imgs.length; i++) {
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
+
+        document.getElementById("sidebar").classList.add("background-layer");
+        document.querySelector(".navbar").classList.add("background-layer");
     }
 }
 
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
+
+    document.getElementById("sidebar").classList.remove("background-layer");
+    document.querySelector(".navbar").classList.remove("background-layer");
 }
 
 
