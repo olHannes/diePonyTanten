@@ -203,10 +203,40 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 7%;
+    margin-bottom: 13%;
 }
 .introduction img{
     max-width: 80%;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
 }
+
+
+
+.more {
+    display: none;
+}
+
+.read-more-btn {
+    background-color: #008CBA; /* Blaue Hintergrundfarbe */
+    color: white; /* Weiße Schriftfarbe */
+    padding: 10px 20px; /* Innenabstand */
+    text-align: center; /* Text zentrieren */
+    text-decoration: none; /* Kein Unterstrich */
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px; /* Abgerundete Ecken */
+    border: none; /* Keine Rahmen */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+}
+
+.read-more-btn:hover {
+    background-color: #006080; /* Dunklere Farbe bei Hover */
+}
+
 
 
 /*Style for instagram link*/

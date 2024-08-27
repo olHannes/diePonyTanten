@@ -54,22 +54,57 @@
             
             <div class="welcomeTxt">
                 <h1>Wer sind wir?</h1>
+            </div>
+            <div class="introduction">
+                <h3>Rieke</h3>
+                <img src="static/images/intro_rieke.jpg" alt="placeholder Image">
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt vero, sint accusantium sed perspiciatis ducimus et ipsum repudiandae vel accusamus, debitis odit autem cupiditate nihil maiores nulla dolore iste?
+                    Hi, ich bin Rieke, 30 Jahre jung und habe mit Lisa zusammen Ponytanten gegründet. Ponys berühren uns einfach immer wieder direkt im Herzen...
+                    <span class="dots">...</span><span class="more"> und für mich ich es das schönste, dieses Glück mit alt und jung zu teilen. Ich liebe alle unsere Ponys gleich, weshalb ich kein Lieblingspony hab.</span>
                 </p>
+                <button class="read-more-btn">Mehr lesen</button>
             </div>
+            
             <div class="introduction">
-                <img src="static/images/placeholder.jpg" alt="placeholder Image">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt vero, sint accusantium sed perspiciatis ducimus et ipsum repudiandae vel accusamus, debitis odit autem cupiditate nihil maiores nulla dolore iste?</p>
+                <h3>Lisa</h3>
+                <img src="static/images/intro_lisa.jpg" alt="placeholder Image">
+                <p>
+                    Ich bin Lisa, 33 Jahre jung. Rieke und ich haben die Ponytanten ins Leben gerufen. Und zusammen mit unseren tollen Shettys wollen wir Kindern und Erwachsenen spielerisch die Welt der Ponys näher bringen...
+                    <span class="dots">...</span><span class="more"> Wir haben schnell gemerkt, dass Ponys Zauberkräfte haben und Tränen trösten können! Ich mag alle unsere Shettys, aber besonders gut gefällt mir Balou. Der kleine Opi erinnert mich an mein erstes eigenes Pferd Ladoro.</span>
+                </p>
+                <button class="read-more-btn">Mehr lesen</button>
             </div>
+            
             <div class="introduction">
-                <img src="static/images/placeholder.jpg" alt="placeholder Image">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt vero, sint accusantium sed perspiciatis ducimus et ipsum repudiandae vel accusamus, debitis odit autem cupiditate nihil maiores nulla dolore iste?</p>
+                <h3>Maren</h3>
+                <img src="static/images/intro_maren.jpg" alt="placeholder Image">
+                <p>
+                    Hi, ich bin Maren und bin 20 Jahre alt. Ich bin die kleine Cousine von Lisa und auch schon seit Anfang an bei den Ponytanten dabei...
+                    <span class="dots">...</span><span class="more"> Ich reite seit meinem 6. Lebensjahr und Lisa hat mich damals zum Reiten gebracht. Ich liebe es, mit Kindern zu arbeiten und mit Ponys, also die perfekte Kombination. Mein Liebling ist der kleine freche Olaf.</span>
+                </p>
+                <button class="read-more-btn">Mehr lesen</button>
             </div>
+            
             <div class="introduction">
-                <img src="static/images/placeholder.jpg" alt="placeholder Image">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam deserunt vero, sint accusantium sed perspiciatis ducimus et ipsum repudiandae vel accusamus, debitis odit autem cupiditate nihil maiores nulla dolore iste?</p>
+                <h3>Johanna</h3>
+                <img src="static/images/intro_johanna.jpg" alt="placeholder Image">
+                <p>
+                    Hallöchen, ich bin Johanna und 17 Jahre alt. Mich findet ihr meist bei größeren Aktionen der Ponytanten oder im Stall, wenn ich mich um unsere Lieblinge kümmere...
+                    <span class="dots">...</span><span class="more"> Mich und mein Lieblingspony Mino trifft man auch meist in den umliegenden Dörfern an, wenn wir die Straßen wieder unsicher machen. Ich mache bei den Ponytanten mit, weil ich es liebe, Jung und Alt einen Zugang zu unseren lieben Vierbeinern zu bieten und es total schön ist zu sehen, wie gut sie uns doch tun!</span>
+                </p>
+                <button class="read-more-btn">Mehr lesen</button>
             </div>
+            
+            <div class="introduction">
+                <h3>Annalena</h3>
+                <img src="static/images/intro_annalena.jpg" alt="placeholder Image">
+                <p>
+                    Mein Name ist Annalena, aber die meisten nennen mich einfach Leni. Ich bin 17 Jahre alt und verbringe meine Freizeit am liebsten bei den Ponys...
+                    <span class="dots">...</span><span class="more"> Mein Lieblingspony heißt Lotte, mit der ich viele schöne Momente teile. Ich helfe auch gerne bei den Ponytanten aus, was mir viel Freude bereitet und mir die Möglichkeit gibt, meine Leidenschaft für Ponys mit anderen zu teilen.</span>
+                </p>
+                <button class="read-more-btn">Mehr lesen</button>
+            </div>
+            
         </div>
         <div style="width: 100%; height: 200px;">
 
@@ -321,6 +356,24 @@ function setPanel(section) {
     }
 }
 
+
+
+document.querySelectorAll('.read-more-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const moreText = button.previousElementSibling.querySelector('.more');
+            const dots = button.previousElementSibling.querySelector('.dots');
+            
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "inline";
+                dots.style.display = "none";
+                button.textContent = "Weniger lesen";
+            } else {
+                moreText.style.display = "none";
+                dots.style.display = "inline";
+                button.textContent = "Mehr lesen";
+            }
+        });
+    });
 
 </script>
 </html>
