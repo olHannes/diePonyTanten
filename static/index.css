@@ -53,6 +53,7 @@ body {
     z-index: 1;
     width: 150px;
     text-align: right;
+    border-radius: 5px;
 }
 
 .dropdown-content .nav-item {
