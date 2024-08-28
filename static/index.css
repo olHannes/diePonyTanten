@@ -121,6 +121,7 @@ body {
     margin: 20px auto;
     font-family: Arial, sans-serif;
     color: #333;
+    margin-bottom: 15%;
 }
 
 #contactData h2 {
@@ -167,22 +168,43 @@ body {
 
 
 /*Style for embedded google maps*/
-.location{
+.location {
     width: 85%;
-    height: 15%;
+    height: auto;
     align-items: center;
     justify-content: center;
     position: relative;
     left: 13%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    overflow: hidden;
+    margin-bottom: 15%;
 }
-.location iframe{
+
+.location iframe {
     width: 100%;
     height: 30vh;
+    border: none;
+}
+
+
+
+/*Style for instagram link*/
+
+#instaLink{
+    width: 80%; 
+    position: relative; 
+    left: 13%;
+}
+#instaLink img{
+    max-height: 25vh;
+    width: auto;
 }
 
 
 /*Style for image lines*/
-
 .imgContainer{
     width: 90%;
     position: relative;
@@ -195,7 +217,6 @@ body {
 
 
 /*Style for image Viewer*/
-
 .modal {
     display: none; 
     position: fixed; 
@@ -249,7 +270,6 @@ body {
 }
 
 /*style for person introduction*/
-
 .introduction{
     width: 80%;
     position: relative;
@@ -268,51 +288,31 @@ body {
 }
 
 
-
+/*Style for read-more Text*/
 .more {
     display: none;
 }
 
 .read-more-btn {
-    background-color: #008CBA; /* Blaue Hintergrundfarbe */
-    color: white; /* Weiße Schriftfarbe */
-    padding: 10px 20px; /* Innenabstand */
-    text-align: center; /* Text zentrieren */
-    text-decoration: none; /* Kein Unterstrich */
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin-top: 15px;
     cursor: pointer;
-    border-radius: 5px; /* Abgerundete Ecken */
-    border: none; /* Keine Rahmen */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
-
 .read-more-btn:hover {
-    background-color: #006080; /* Dunklere Farbe bei Hover */
+    background-color: #006080;
 }
-
-
-
-/*Style for instagram link*/
-
-#instaLink{
-    width: 80%; 
-    position: relative; 
-    left: 13%;
-}
-#instaLink img{
-    max-height: 25vh;
-    width: auto;
-}
-
-
-
-
 
 
 /*Style for loading animation*/
-
 .loader {
     display: none;
     position: absolute;
