@@ -116,12 +116,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fff;
-    width: 85%;
+    width: 80%;
     font-family: Arial, sans-serif;
     color: #333;
 
     position: relative;
-    left: 13%;
+    left: 10%;
     margin-bottom: 15%;
     padding-bottom: 15px;
 }
@@ -130,7 +130,7 @@ body {
     text-align: center;
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #007BFF;
+    color:  rgb(38, 75, 27);
 }
 
 .contact-item {
@@ -172,13 +172,18 @@ body {
 
 /*Style for embedded google maps*/
 .location{
-    width: 85%;
+    width: 80%;
     height: 15%;
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 13%;
+    left: 10%;
     margin-bottom: 10%;
+
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 5px;
+    border-radius: 10px;
 }
 .location iframe{
     width: 100%;
