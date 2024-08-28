@@ -216,6 +216,9 @@ body {
 }
 .imgContainer img{
     width: 45%;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38);
 }
 
 
