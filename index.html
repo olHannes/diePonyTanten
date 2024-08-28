@@ -252,6 +252,19 @@
 
 
 <script>
+
+window.addEventListener('hashchange', function() {
+    handleHashChange();
+});
+document.addEventListener('DOMContentLoaded', function() {
+    handleHashChange();
+});
+function handleHashChange() {
+    const hash = window.location.hash.substring(1);
+    const section = hash ? hash : 'home';
+    setPanel(section);
+}
+
 function toggleMenu() {
     const dropdownMenu = document.getElementById("dropdownMenu");
     dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
