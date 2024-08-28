@@ -115,13 +115,15 @@ body {
 #contactData {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
     background-color: #fff;
-    width: 80%;
-    margin: 20px auto;
+    width: 85%;
     font-family: Arial, sans-serif;
     color: #333;
+
+    position: relative;
+    left: 13%;
     margin-bottom: 15%;
+    padding-bottom: 15px;
 }
 
 #contactData h2 {
@@ -135,6 +137,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    margin-left: 10px;
 }
 
 .contact-item .icon {
@@ -168,27 +171,20 @@ body {
 
 
 /*Style for embedded google maps*/
-.location {
+.location{
     width: 85%;
-    height: auto;
+    height: 15%;
     align-items: center;
     justify-content: center;
     position: relative;
     left: 13%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
-    overflow: hidden;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
-
-.location iframe {
+.location iframe{
     width: 100%;
     height: 30vh;
-    border: none;
+    border-radius: 10px;
 }
-
 
 
 /*Style for instagram link*/
