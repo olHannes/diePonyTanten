@@ -87,3 +87,21 @@ a:hover {
         font-size: 0.9em;
     }
 }
+
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #11351a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+#scrollToTopBtn:hover {
+    background-color: #485749;
+}
