@@ -352,7 +352,7 @@ body {
     }
     
     #lvm-panel {
-        display: block;
+        display: none;
         position: absolute;
         bottom: 40px;
         left: 50%;
