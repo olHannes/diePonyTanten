@@ -5,6 +5,7 @@ window.addEventListener('hashchange', function() {
 document.addEventListener('DOMContentLoaded', function() {
     handleHashChange();
 });
+
 function handleHashChange() {
     const hash = window.location.hash.substring(1);
     const section = hash ? hash : 'home';
@@ -114,3 +115,25 @@ window.onscroll = function() {
 document.getElementById("scrollToTopBtn").addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+function togglePanel() {
+    var panel = document.getElementById("lvm-panel");
+    if (panel.style.display === "none" || panel.style.display === "") {
+        panel.style.display = "block";
+        document.addEventListener("click", outsideClickListener);
+    } else {
+        panel.style.display = "none";
+        document.removeEventListener("click", outsideClickListener);
+    }
+}
+
+function outsideClickListener(event) {
+    var panel = document.getElementById("lvm-panel");
+    var logo = document.querySelector("footer img");
+
+    if (!panel.contains(event.target) && event.target !== logo) {
+        panel.style.display = "none";
+        document.removeEventListener("click", outsideClickListener);
+    }
+}
