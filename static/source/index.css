@@ -108,6 +108,11 @@ body {
     line-height: 1.6em;
 }
 
+.welcomeTxt img{
+    max-width: 90%;
+    border-radius: 7px;
+}
+
 .panel{
     transition: ease-in 1s;
 }
@@ -116,6 +121,7 @@ body {
 /*Style for contact Data*/
 #contactData {
     border-radius: 10px;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     width: 80%;
@@ -182,9 +188,10 @@ body {
     position: relative;
     left: 10%;
     margin-bottom: 20%;
+    background-color: #fff;
 
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 5px;
     border-radius: 10px;
 }
