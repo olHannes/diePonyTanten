@@ -109,6 +109,11 @@ body {
     line-height: 1.6em;
 }
 
+.welcomeTxt img{
+    max-width: 90%;
+    border-radius: 7px;
+}
+
 .panel{
     transition: ease-in 1s;
 }
@@ -117,6 +122,7 @@ body {
 /*Style for contact Data*/
 #contactData {
     border-radius: 10px;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     width: 80%;
@@ -182,9 +188,10 @@ body {
     position: relative;
     left: 10%;
     margin-bottom: 20%;
+    background-color: #fff;
 
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 5px;
     border-radius: 10px;
 }
@@ -325,10 +332,56 @@ body {
 }
 
 
-footer{
-    text-align: center;
-    padding: 10px;
-}
+    footer {
+        text-align: center;
+        padding: 10px;
+        position: relative;
+    }
+    
+    footer img {
+        width: 20%;
+        margin-left: 10px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    
+    footer h4 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    #lvm-panel {
+        display: none;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        width: 300px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+        text-align: left;
+    }
+    
+    #lvm-panel p {
+        margin: 5px 0;
+        font-size: 0.9em;
+        color: #555;
+    }
+    
+    #lvm-panel p a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    
+    #lvm-panel p a:hover {
+        text-decoration: underline;
+    }
+    
 
 #scrollToTopBtn {
     position: fixed;
