@@ -137,3 +137,10 @@ function outsideClickListener(event) {
         document.removeEventListener("click", outsideClickListener);
     }
 }
+
+
+
+document.querySelector('a[href="#ponys"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('ponys').scrollIntoView({ behavior: 'smooth' });
+});
