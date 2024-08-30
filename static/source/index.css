@@ -11,7 +11,7 @@ body {
 }
 .sideBar {
     position: fixed;
-    z-index: 4;
+    z-index: 10;
     left: 0;
     top: 0;
     height: 100%;
@@ -22,9 +22,7 @@ body {
     transition: all 1s ease;
 }
 
-.sideBar.home {
-    background-color: rgb(71, 139, 50);
-}
+
 
 .navbar {
     position: fixed;
@@ -35,7 +33,7 @@ body {
     padding-left: 10px;
     padding-right: 5px;
     padding-bottom: 7px;
-    z-index: 1000;
+    z-index: 10;
     border-radius: 0 0 0 9px;
 }
 
@@ -52,7 +50,7 @@ body {
     right: 0;
     background-color: #333;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
     width: 150px;
     text-align: right;
     border-radius: 5px;
@@ -72,6 +70,7 @@ body {
 
 
 .logo {
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,6 +90,7 @@ body {
 }
 
 .welcomeTxt {
+    z-index: 5;
     margin-top: 20px;
     padding: 20px;
     text-align: center;
@@ -121,6 +121,7 @@ body {
 
 /*Style for contact Data*/
 #contactData {
+    z-index: 5;
     border-radius: 10px;
     -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -181,6 +182,7 @@ body {
 
 /*Style for embedded google maps*/
 .location{
+    z-index: 5;
     width: 80%;
     height: 15%;
     align-items: center;
@@ -205,6 +207,7 @@ body {
 /*Style for instagram link*/
 
 #instaLink{
+    z-index: 5;
     width: 80%; 
     position: relative; 
     left: 13%;
@@ -217,6 +220,7 @@ body {
 
 /*Style for image lines*/
 .imgContainer{
+    z-index: 5;
     width: 90%;
     position: relative;
     left: 5%;
@@ -234,7 +238,7 @@ body {
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 5; 
     padding-top: 100px; 
     left: 0;
     top: 0;
@@ -285,6 +289,7 @@ body {
 
 /*style for person introduction*/
 .introduction{
+    z-index: 5;
     width: 80%;
     position: relative;
     left: 10%;
@@ -308,6 +313,7 @@ body {
 }
 
 .read-more-btn {
+    z-index: 5;
     background-color: #008CBA;
     color: white;
     padding: 10px 20px;
@@ -363,7 +369,7 @@ body {
         padding: 15px;
         width: 300px;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-        z-index: 100;
+        z-index: 10;
         text-align: left;
     }
     
@@ -387,7 +393,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100;
+    z-index: 4;
     background-color: #11351a;
     color: white;
     border: none;

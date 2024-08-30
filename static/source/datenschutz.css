@@ -93,7 +93,7 @@ a:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100;
+    z-index: 10;
     background-color: #11351a;
     color: white;
     border: none;
