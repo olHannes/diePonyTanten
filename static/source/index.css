@@ -404,3 +404,87 @@ body {
 #scrollToTopBtn:hover {
     background-color: #485749;
 }
+
+
+/*Home navigation Buttons*/
+.btn {
+    line-height: 50px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #FFF;
+    background-color: #4CAF50;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.navigationBtn span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Home Button */
+.navigationBtn.home::before {
+    content: '🏠';
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: #FFF;
+    transform: translateX(-20px);
+}
+
+/* Services Button */
+.navigationBtn.services::before {
+    content: '🛠️';
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: #FFF;
+    transform: translateX(-20px);
+}
+
+/* Contact Button */
+.navigationBtn.contact::before {
+    content: '📞';
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: #FFF;
+    transform: translateX(-20px);
+}
+
+/* Gallery Button */
+.navigationBtn.gallery::before {
+    content: '🖼️';
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: #FFF;
+    transform: translateX(-20px);
+}
+
+/* Hover Effect */
+.navigationBtn:hover {
+    width: 270px;
+    padding-left: 20px;
+}
+.navigationBtn:hover span {
+    transform: translateX(20px);
+}
+.navigationBtn:hover::before {
+    opacity: 1;
+    transform: translateX(10px);
+}
