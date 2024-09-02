@@ -34,6 +34,7 @@ function setSidebarColor(section) {
 
 function setPanel(section){
     document.getElementById('home').style.display="none";
+    document.getElementById('angebot').style.display="none";
     document.getElementById('about').style.display="none";
     document.getElementById('gallery').style.display="none";
     document.getElementById('contact').style.display="none";
