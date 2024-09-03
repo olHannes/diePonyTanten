@@ -408,7 +408,7 @@ body {
 
 .navBtn{
     height: 10vh;
-    width: 50vw;
+    width: 70vw;
     background-color: rgb(23 37 31);
     color: white;
     border-radius: 25px;
@@ -417,7 +417,7 @@ body {
     box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.85);
 
     position: relative;
-    left: -50vw;
+    left: -70vw;
     margin-bottom: 7%;
 
     display: flex;
@@ -437,5 +437,5 @@ body {
     height: 90%;
 }
 .navBtnLoc{
-    left: 25vw;
+    left: 15vw;
 }
