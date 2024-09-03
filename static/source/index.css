@@ -405,3 +405,32 @@ body {
     background-color: #485749;
 }
 
+
+.navBtn{
+    height: 10vh;
+    width: 50vw;
+    background-color: rgb(23 37 31);
+    color: white;
+    border-radius: 25px;
+    
+    -webkit-box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.85); 
+    box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.85);
+
+    position: relative;
+    left: 25vw;
+    margin-bottom: 7%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBtn p{
+    font-size: 130%;
+}
+.navBtn img{
+    height: 90%;
+}
+.navBtnLoc{
+    left: 25vw;
+}
