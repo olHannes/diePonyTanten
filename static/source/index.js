@@ -145,3 +145,26 @@ document.querySelector('a[href="#ponys"]').addEventListener('click', function(e)
     e.preventDefault();
     document.getElementById('ponys').scrollIntoView({ behavior: 'smooth' });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navButtons = document.querySelectorAll('.navBtn');
+
+    function checkPosition() {
+        navButtons.forEach(btn => {
+            const rect = btn.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top >= 0 && rect.bottom <= windowHeight) {
+                btn.classList.add('navBtnLoc');
+            } else {
+                btn.classList.remove('navBtnLoc');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkPosition);
+
+    checkPosition();
+});
