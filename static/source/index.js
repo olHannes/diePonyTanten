@@ -168,3 +168,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     checkPosition();
 });
+
+function goToPage(page){
+    window.location.href="#"+page;
+    window.scrollTo(0, 0);
+}
