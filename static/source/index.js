@@ -150,8 +150,10 @@ document.querySelector('a[href="#ponys"]').addEventListener('click', function(e)
 
 document.addEventListener("DOMContentLoaded", function () {
     const navButtons = document.querySelectorAll('.navBtn');
+    const backHomeElements = document.querySelectorAll('.backHome');
 
     function checkPosition() {
+        // Überprüfe die Positionen der Navigationstasten
         navButtons.forEach(btn => {
             const rect = btn.getBoundingClientRect();
             const windowHeight = window.innerHeight;
@@ -162,12 +164,26 @@ document.addEventListener("DOMContentLoaded", function () {
                 btn.classList.remove('navBtnLoc');
             }
         });
+
+        // Überprüfe die Positionen aller backHome-Elemente
+        backHomeElements.forEach(backHome => {
+            const rect = backHome.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (rect.top >= 0 && rect.bottom <= windowHeight) {
+                backHome.classList.add('lockBackHome');
+            } else {
+                backHome.classList.remove('lockBackHome');
+            }
+        });
     }
 
     window.addEventListener('scroll', checkPosition);
 
     checkPosition();
 });
+
+
 
 function goToPage(page){
     window.location.href="#"+page;

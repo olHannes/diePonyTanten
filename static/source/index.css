@@ -439,3 +439,40 @@ body {
 .navBtnLoc{
     left: 15vw;
 }
+
+
+
+.backHome{
+    height: 7vh;
+    width: 60%;
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    
+    -webkit-box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.85); 
+    box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.85);
+
+    position: relative;
+    left: -100%;
+    margin-bottom: 7%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.backHome:hover{
+    background-color: rgb(81, 81, 81);
+}
+
+.backHome img{
+    height: 90%;
+}
+.backHome p{
+    font-size: 120%;
+}
+.lockBackHome{
+    left: 20%;
+}
+
