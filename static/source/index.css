@@ -447,7 +447,7 @@ body {
     width: 60%;
     background-color: rgb(197, 197, 197);
     color: rgb(0, 0, 0);
-    border-radius: 25px;
+    border-radius: 16px;
     
     -webkit-box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.85); 
     box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.85);
@@ -470,7 +470,7 @@ body {
     height: 90%;
 }
 .backHome p{
-    font-size: 120%;
+    font-size: 110%;
 }
 .lockBackHome{
     left: 20%;
