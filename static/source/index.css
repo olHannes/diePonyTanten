@@ -230,6 +230,7 @@ body {
     border-radius: 5px;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.38);
+    cursor: pointer;
 }
 
 
@@ -424,6 +425,7 @@ body {
     justify-content: space-around;
     align-items: center;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 .navBtn:hover{
     background-color: rgb(63, 63, 63);
@@ -460,6 +462,7 @@ body {
     justify-content: space-around;
     align-items: center;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .backHome:hover{
@@ -489,6 +492,7 @@ body {
 
 .offer p{
     color: #333;
+    font-size: 1.2em;
     line-height: 1.6;
 }
 
@@ -517,7 +521,8 @@ body {
 }
 
 .kleiner-einblick p {
-    font-size: 16px;
+    font-size: 1.1em;
+    line-height: 1.4em;
     margin-bottom: 20px;
 }
 
@@ -527,7 +532,8 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
-    margin-right: 5%;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .kleiner-einblick button:hover{
