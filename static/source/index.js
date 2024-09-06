@@ -1,3 +1,4 @@
+/*handle hash change*/
 
 window.addEventListener('hashchange', function() {
     handleHashChange();
@@ -11,7 +12,9 @@ function handleHashChange() {
     const section = hash ? hash : 'home';
     setPanel(section);
 }
+//####################################################################
 
+/*drop down Menue */
 function toggleMenu() {
     const dropdownMenu = document.getElementById("dropdownMenu");
     dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
@@ -25,13 +28,10 @@ window.onclick = function(event) {
         }
     }
 }
+//####################################################################
 
 
-
-function setSidebarColor(section) {
-    setPanel(section);
-}
-
+/*change to another panel/page */
 function setPanel(section){
     document.getElementById('home').style.display="none";
     document.getElementById('angebot').style.display="none";
@@ -47,10 +47,15 @@ function setPanel(section){
     document.getElementById(section).style.display="block";
 }
 
+function goToPage(page){
+    window.location.href="#"+page;
+    window.scrollTo(0, 0);
+}
+//####################################################################
 
 
 
-
+/*gallery image-viewer*/
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -74,19 +79,25 @@ span.onclick = function() {
     document.getElementById("sidebar").classList.remove("background-layer");
     document.querySelector(".navbar").classList.remove("background-layer");
 }
+//####################################################################
 
-
+/*link to instagram of ponytanten*/
 document.getElementById("instaLink").onclick = function() {
+    goToInstagram();
+};
+document.getElementById("instaBtnLink").onclick = function() {
+    goToInstagram();
+};
+function goToInstagram(){
     var userConfirmation = confirm("Bist du sicher, dass du zu Instagram wechseln möchtest?");
-    
     if (userConfirmation) {
         window.location.href = "https://www.instagram.com/dieponytanten/";
     }
-};
+}
+//####################################################################
 
 
-
-
+/*collapsable text for description*/
 document.querySelectorAll('.read-more-btn').forEach(button => {
         button.addEventListener('click', () => {
             const moreText = button.previousElementSibling.querySelector('.more');
@@ -103,7 +114,9 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
             }
         });
     });
+//####################################################################
 
+/*scroll to top Button*/
 window.onscroll = function() {
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -116,9 +129,10 @@ window.onscroll = function() {
 document.getElementById("scrollToTopBtn").addEventListener("click", function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+//####################################################################
 
-
-function togglePanel() {
+/*toggle LVM Panel*/
+function toggleLVMPanel() {
     var panel = document.getElementById("lvm-panel");
     if (panel.style.display === "none" || panel.style.display === "") {
         panel.style.display = "block";
@@ -138,16 +152,17 @@ function outsideClickListener(event) {
         document.removeEventListener("click", outsideClickListener);
     }
 }
+//####################################################################
 
-
-
+/*goto ponys auto scroll*/
 document.querySelector('a[href="#ponys"]').addEventListener('click', function(e) {
     e.preventDefault();
     document.getElementById('ponys').scrollIntoView({ behavior: 'smooth' });
 });
+//####################################################################
 
 
-
+/*animated show of navigation and back-to-home buttons*/
 document.addEventListener("DOMContentLoaded", function () {
     const navButtons = document.querySelectorAll('.navBtn');
     const backHomeElements = document.querySelectorAll('.backHome');
@@ -177,15 +192,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
     window.addEventListener('scroll', checkPosition);
-
     checkPosition();
 });
+//####################################################################
 
-
-
-function goToPage(page){
-    window.location.href="#"+page;
-    window.scrollTo(0, 0);
-}

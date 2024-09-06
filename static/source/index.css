@@ -392,7 +392,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 4;
+    z-index: 7;
     background-color: #11351a;
     color: white;
     border: none;
@@ -495,4 +495,42 @@ body {
 .offer p::before {
     content: "• ";
     color: #4CAF50;
+}
+
+
+
+
+
+.kleiner-einblick {
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 20px auto;
+}
+
+.kleiner-einblick h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.kleiner-einblick p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.kleiner-einblick button {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 5%;
+}
+
+.kleiner-einblick button:hover{
+    -webkit-box-shadow: 5px 5px 15px -1px #000000; 
+    box-shadow: 5px 5px 15px -1px #000000;
 }
