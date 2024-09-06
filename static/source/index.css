@@ -476,3 +476,23 @@ body {
     left: 20%;
 }
 
+
+.offer{
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 20px auto;
+}
+
+.offer p{
+    color: #333;
+    line-height: 1.6;
+}
+
+.offer p::before {
+    content: "• ";
+    color: #4CAF50;
+}
