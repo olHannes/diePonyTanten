@@ -29,17 +29,17 @@ body {
     top: 0;
     right: 0;
     background-color: #333;
-    padding-top: 7px;
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-bottom: 7px;
+    padding-top: 15px;
+    padding-left: 18px;
+    padding-right: 13px;
+    padding-bottom: 15px;
     z-index: 10;
     border-radius: 0 0 0 9px;
 }
 
 .menu-icon {
     color: white;
-    font-size: 24px;
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -410,7 +410,7 @@ body {
 .navBtn{
     height: 10vh;
     width: 70vw;
-    background-color: rgb(23 37 31);
+    background-color: rgb(45 92 31);
     color: white;
     border-radius: 25px;
     
@@ -428,7 +428,7 @@ body {
     cursor: pointer;
 }
 .navBtn:hover{
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(72, 147, 49);
     padding: 5px;
 }
 
