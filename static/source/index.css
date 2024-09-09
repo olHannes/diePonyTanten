@@ -29,17 +29,17 @@ body {
     top: 0;
     right: 0;
     background-color: #333;
-    padding-top: 15px;
-    padding-left: 18px;
-    padding-right: 13px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 13px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     z-index: 10;
     border-radius: 0 0 0 9px;
 }
 
 .menu-icon {
     color: white;
-    font-size: 32px;
+    font-size: 25px;
     cursor: pointer;
 }
 
