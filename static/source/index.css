@@ -541,3 +541,22 @@ body {
     -webkit-box-shadow: 5px 5px 15px -1px #000000; 
     box-shadow: 5px 5px 15px -1px #000000;
 }
+
+.contactLink{
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 20px auto;
+}
+.contactLink h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contactLink a{
+    font-size: 1.1em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
