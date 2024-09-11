@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     background-color: rgb(251, 247, 241);
     flex-direction: column;
-    font-family: "Baskervville SC", serif;
+    font-family: "Lora", serif;
 }
 .sideBar {
     position: fixed;
