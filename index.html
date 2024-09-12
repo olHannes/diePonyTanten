@@ -297,99 +297,143 @@
             <div class="welcomeTxt">
                 <h1>Galerie</h1>
             </div>
-            <div class="imgContainer">
-                <img src="static/images/img1.jpg" alt="img1.jpg" class="clickable">
-                <img src="static/images/img2.jpg" alt="img2.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img3.jpg" alt="img3.jpg" class="clickable">
-                <img src="static/images/img4.jpg" alt="img4.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img5.jpg" alt="img5.jpg" class="clickable">
-                <img src="static/images/img6.jpg" alt="img6.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img7.jpg" alt="img7.jpg" class="clickable">
-                <img src="static/images/img8.jpg" alt="img8.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img9.jpg" alt="img9.jpg" class="clickable">
-                <img src="static/images/img10.jpg" alt="img10.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img11.jpg" alt="img11.jpg" class="clickable">
-                <img src="static/images/img12.jpg" alt="img12.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img15.jpg" alt="img15.jpg" class="clickable">
-                <img src="static/images/img14.jpg" alt="img14.jpg" class="clickable">
-            </div>
-
-            <div class="width: 95%; position: relative; left: 5%; margin-bottom: 20px;">
-                <img src="static/images/img13.jpg" alt="img13.jpg" style="width: 85%; position: relative; left: 8%;" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img18.jpg" alt="img18.jpg" class="clickable">
-                <img src="static/images/img19.jpg" alt="img19.jpg" class="clickable">
-            </div>
-
-            <div class="width: 95%; position: relative; left: 5%; margin-bottom: 20px;">
-                <img src="static/images/img16.jpg" alt="img16.jpg" style="width: 85%; position: relative; left: 8%;" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img20.jpg" alt="img20.jpg" class="clickable">
-                <img src="static/images/img17.jpg" alt="img17.jpg" class="clickable">
-            </div>
-
-            <div class="width: 95%; position: relative; left: 5%; margin-bottom: 20px;">
-                <img src="static/images/img21.jpg" alt="img21.jpg" style="width: 85%; position: relative; left: 8%;" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img22.jpg" alt="img22.jpg" class="clickable">
-                <img src="static/images/img23.jpg" alt="img23.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img24.jpg" alt="img24.jpg" class="clickable">
-                <img src="static/images/img25.jpg" alt="img25.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img26.jpg" alt="img26.jpg" class="clickable">
-                <img src="static/images/img27.jpg" alt="img27.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img28.jpg" alt="img28.jpg" class="clickable">
-                <img src="static/images/img31.jpg" alt="img31.jpg" class="clickable">
+            <div class="folderContainer">
+                <!-- Ordner für Album 1 -->
+                <div class="folder" onclick="openFolder('album1')">
+                    <img src="static/images/album1.jpg" alt="Album 1">
+                    <p>Ponys</p>
+                </div>
                 
+
+                <!-- Ordner für Album 2 -->
+                <div class="folder" onclick="openFolder('album2')">
+                    <img src="static/images/album2.jpg" alt="Album 2">
+                    <p>Quatsch</p>
+                </div>
+
+
+                <!-- Ordner für Album 3 -->
+                <div class="folder" onclick="openFolder('album3')">
+                    <img src="static/images/album3.jpg" alt="Album 3">
+                    <p>Ponyspaß</p>
+                </div>
+            </div>
+            
+            <div class="folderContainer" style="margin-bottom: 10%;">
+                <!-- Ordner für Album 4 -->
+                <div class="folder" onclick="openFolder('album4')">
+                    <img src="static/images/album4.jpg" alt="Album 4">
+                    <p>Diakonie</p>
+                </div>
+
+                <!-- Ordner für Album 5 -->
+                <div class="folder" onclick="openFolder('album5')">
+                    <img src="static/images/album5.jpg" alt="Album 5">
+                    <p>sonstiges</p>
+                </div>
+            </div>
+            <!-- Album 1 -->
+            <div id="album1" class="album" style="display:none;">
+                <div class="imgContainer">
+                    <img src="static/images/img1.jpg" alt="img1" class="clickable">
+                    <img src="static/images/img2.jpg" alt="img2" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img4.jpg" alt="img4" class="clickable">
+                    <img src="static/images/img5.jpg" alt="img5" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img6.jpg" alt="img6" class="clickable">
+                    <img src="static/images/img7.jpg" alt="img7" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img19.jpg" alt="img19" class="clickable">
+                    <img src="static/images/img14.jpg" alt="img14" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img9.jpg" alt="img9" class="clickable">
+                    <img src="static/images/img10.jpg" alt="img10" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img26.jpg" alt="img26" class="clickable">
+                    <img src="static/images/img27.jpg" alt="img27" class="clickable">
+                </div>
+                <button onclick="closeFolder('album1')">Zurück</button>
+            </div>
+            
+            <!-- Album 2 -->
+            <div id="album2" class="album" style="display:none;">
+                <div class="imgContainer">
+                    <img src="static/images/img18.jpg" alt="img18" class="clickable">
+                    <img src="static/images/img15.jpg" alt="img15" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img13.jpg" alt="img13" class="clickable" style="width: 85%; position: relative; left: 0%;">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img17.jpg" alt="img17" class="clickable">
+                    <img src="static/images/img23.jpg" alt="img23" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img3.jpg" alt="img3" class="clickable">
+                </div>
+                <button onclick="closeFolder('album2')">Zurück</button>
+            </div>
+            
+            <!-- Album 3 -->
+            <div id="album3" class="album" style="display:none;">
+                <div class="imgContainer">
+                    <img src="static/images/img33.jpg" alt="img33" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img20.jpg" alt="img20" class="clickable">
+                    <img src="static/images/img22.jpg" alt="img22" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img24.jpg" alt="img24" class="clickable">
+                    <img src="static/images/img28.jpg" alt="img28" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img29.jpg" alt="img29" class="clickable">
+                    <img src="static/images/img30.jpg" alt="img30" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img31.jpg" alt="img31" class="clickable">
+                    <img src="static/images/img32.jpg" alt="img32" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img8.jpg" alt="img8" class="clickable">
+                </div>
+                <button onclick="closeFolder('album3')">Zurück</button>
+            </div>
+            
+   
+            <!-- Album 4 -->
+                <div id="album4" class="album" style="display:none;">
+                    <div class="imgContainer">
+                        <img src="static/images/img34.jpg" alt="img34" class="clickable">
+                        <img src="static/images/img35.jpg" alt="img35" class="clickable">
+                    </div>
+                    <button onclick="closeFolder('album4')">Zurück</button>
+                </div>
+
+            <!-- Album 5 -->
+            <div id="album5" class="album" style="display:none;">
+                <div class="imgContainer">
+                    <img src="static/images/img11.jpg" alt="img11" class="clickable">
+                    <img src="static/images/img12.jpg" alt="img12" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img16.jpg" alt="img16" class="clickable">
+                    <img src="static/images/img21.jpg" alt="img21" class="clickable">
+                </div>
+                <div class="imgContainer">
+                    <img src="static/images/img25.jpg" alt="img25" class="clickable">
+                </div>
+                <button onclick="closeFolder('album5')">Zurück</button>
             </div>
 
-            <div class="imgContainer">
-                <img src="static/images/img30.jpg" alt="img30.jpg" class="clickable">
-                <img src="static/images/img29.jpg" alt="img29.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img32.jpg" alt="img32.jpg" class="clickable">
-                <img src="static/images/img33.jpg" alt="img33.jpg" class="clickable">
-            </div>
-
-            <div class="imgContainer">
-                <img src="static/images/img34.jpg" alt="img34.jpg" class="clickable">
-                <img src="static/images/img35.jpg" alt="img35.jpg" class="clickable">
-            </div>
-
+            
             <div id="myModal" class="modal">
                 <span class="close">&times;</span>
                 <img class="modal-content" id="img01">

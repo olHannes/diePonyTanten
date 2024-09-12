@@ -287,6 +287,46 @@ body {
     cursor: pointer;
 }
 
+.folderContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.folder {
+    text-align: center;
+    cursor: pointer;
+}
+
+.folder img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.album {
+    display: none;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    font-size: large;
+    color: white;
+    background-color: rgb(45 92 31);
+}
+
+button:hover{
+    background-color: rgb(76, 156, 52);
+}
+
 /*style for person introduction*/
 .introduction{
     z-index: 5;

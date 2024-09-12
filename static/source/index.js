@@ -81,6 +81,20 @@ span.onclick = function() {
 }
 //####################################################################
 
+/*gallery folder functions*/
+function openFolder(albumId) {
+    closeFolder('album3');
+    closeFolder('album2');
+    closeFolder('album1');
+    document.getElementById(albumId).style.display = 'block';
+}
+
+function closeFolder(albumId) {
+    document.getElementById(albumId).style.display = 'none';
+}
+
+//####################################################################
+
 /*link to instagram of ponytanten*/
 document.getElementById("instaLink").onclick = function() {
     goToInstagram();
