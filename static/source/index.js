@@ -83,14 +83,21 @@ span.onclick = function() {
 
 /*gallery folder functions*/
 function openFolder(albumId) {
-    closeFolder('album3');
-    closeFolder('album2');
-    closeFolder('album1');
-    document.getElementById(albumId).style.display = 'block';
+    var albums = document.querySelectorAll('.album');
+    albums.forEach(function(album) {
+        album.style.display = 'none';
+    });
+
+    var album = document.getElementById(albumId);
+    album.style.display = 'block';
+
+    album.scrollIntoView({ behavior: 'smooth' });
 }
 
 function closeFolder(albumId) {
-    document.getElementById(albumId).style.display = 'none';
+    var album = document.getElementById(albumId);
+    album.style.display = 'none';
+    document.querySelector('.folderContainer').scrollIntoView({ behavior: 'smooth' });
 }
 
 //####################################################################
