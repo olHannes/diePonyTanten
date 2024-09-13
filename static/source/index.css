@@ -309,6 +309,10 @@ body {
 .album {
     display: none;
     text-align: center;
+    margin-top: 20%;
+}
+.album h2{
+    color: black;
 }
 
 button {
