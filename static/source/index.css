@@ -314,6 +314,14 @@ body {
 .album h2{
     color: black;
 }
+.line {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    height: 2px;
+    background-color: #000000;
+    margin-bottom: 5%;
+}
 
 button {
     margin-top: 20px;
