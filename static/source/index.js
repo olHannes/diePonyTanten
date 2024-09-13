@@ -45,6 +45,7 @@ function setPanel(section){
         document.getElementById('sidebar').style.width="5%";
     }
     document.getElementById(section).style.display="block";
+    window.scrollTo(0, 0);
 }
 
 function goToPage(page){
