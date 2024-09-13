@@ -583,6 +583,7 @@ a {
 .kleiner-einblick button:hover{
     -webkit-box-shadow: 5px 5px 15px -1px #000000; 
     box-shadow: 5px 5px 15px -1px #000000;
+    background-color: rgb(73, 145, 52);
 }
 
 .contactLink{
