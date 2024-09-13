@@ -98,7 +98,7 @@ function openFolder(albumId) {
 function closeFolder(albumId) {
     var album = document.getElementById(albumId);
     album.style.display = 'none';
-    document.querySelector('.folderContainer').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('.welcomeTxt').scrollIntoView({ behavior: 'smooth' });
 }
 
 //####################################################################
