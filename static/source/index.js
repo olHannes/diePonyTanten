@@ -236,17 +236,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setTheme() {
         const now = new Date();
-        const month = now.getMonth() + 1;
-        const day = now.getDate();
+         month = now.getMonth() + 1;
+         day = now.getDate();
+
+        day = 3;
+        month = 1;
         const themes = {
             christmas: {
                 sidebarClass: 'christmasTheme',
                 headerImage: 'static/theme/rb_981.png'
             },
+            silvester: {
+                sidebarClass: 'silvesterTheme',
+                headerImage: 'static/theme/newYear.png'
+            },
         };
 
         if ((month === 12 && day >= 1) && (month === 12 && day <= 27)) {
             applyTheme(themes.christmas);
+        }else if (month === 1 && day <= 10) {
+            applyTheme(themes.silvester);
         } else {
             const header = document.getElementById('header');
             header.style.display = 'none';

@@ -646,3 +646,15 @@ a {
     box-shadow: 10px 0px 6px 1px rgba(49, 10, 4, 0.79);
     transition: all 1s ease;
 }
+.silvesterTheme {
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5%;
+    background-color: rgb(25, 25, 25);
+    -webkit-box-shadow: 10px 0px 6px 1px rgba(0, 0, 0, 0.79); 
+    box-shadow: 10px 0px 6px 1px rgba(0, 0, 0, 0.79);
+    transition: all 1s ease;
+}
