@@ -219,3 +219,39 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //####################################################################
 
+/*set theme on special dates (e.g. christmas)*/
+document.addEventListener('DOMContentLoaded', function() {
+    function applyTheme(theme) {
+        const sidebar = document.getElementById('sidebar');
+        const header = document.getElementById('header');
+        const headerImage = header.querySelector('img');
+
+        sidebar.className = '';
+        sidebar.classList.add(theme.sidebarClass);
+        if (headerImage) {
+            headerImage.src = theme.headerImage || '';
+        }
+        header.style.display = 'flex';
+    }
+
+    function setTheme() {
+        const now = new Date();
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        const themes = {
+            christmas: {
+                sidebarClass: 'christmasTheme',
+                headerImage: 'static/theme/rb_981.png'
+            },
+        };
+
+        if ((month === 12 && day >= 1) && (month === 12 && day <= 27)) {
+            applyTheme(themes.christmas);
+        } else {
+            const header = document.getElementById('header');
+            header.style.display = 'none';
+        }
+    }
+    setTheme();
+});
+//####################################################################
