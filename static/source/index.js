@@ -236,11 +236,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setTheme() {
         const now = new Date();
-         month = now.getMonth() + 1;
-         day = now.getDate();
-
-        day = 3;
-        month = 1;
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        
         const themes = {
             christmas: {
                 sidebarClass: 'christmasTheme',
