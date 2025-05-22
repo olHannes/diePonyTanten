@@ -17,15 +17,13 @@ function handleHashChange() {
 /*drop down Menue */
 function toggleMenu() {
     const dropdownMenu = document.getElementById("dropdownMenu");
-    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+    dropdownMenu.classList.toggle("dropdown-visible");
 }
 
 window.onclick = function(event) {
-    if (!event.target.matches('.menu-icon')) {
-        const dropdownMenu = document.getElementById("dropdownMenu");
-        if (dropdownMenu.style.display === "block") {
-            dropdownMenu.style.display = "none";
-        }
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    if (!event.target.matches('.menu-icon') && dropdownMenu.classList.contains("dropdown-visible")) {
+        dropdownMenu.classList.remove("dropdown-visible");
     }
 }
 //####################################################################
